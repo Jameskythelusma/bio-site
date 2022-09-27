@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+ }
+
+.bio
+{
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 13px;
+    padding-top: 40px;
+    background-color: #ffc800;
+    position: relative;
+}
+.bio>h1
+{
+    font-size:1.7em;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+.bio>img
+{
+    width: 50%;
+    max-width: 300px !important;
+    border-radius: 50%;
+    border: 10px solid black;
+    
+}
+.bio>.description
+{
+    width: 60%;
+    text-align: center;
+}
+.bio>.social-media
+{
+   width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 60px;
+
+}
+
+.social-media>div
+{
+    width: 50px;
+    height: 50px;
+    border: 1px palegoldenrod solid;
+    padding: 7px 7px;
+    border-radius: 50% 50%;
+    background-color: white;  
+}
+
+.social-media>div:hover
+{
+    background-color: black; 
+    border: 2px solid white;   
+}
+
+.social-media>div>*,.social-media>div>a>*
+{
+    width: 100%;
+}
+.wrapper{
+    max-width: 600px;
+    margin: auto;
+}
+.linkbox
+{
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 1px -7px 7px rgba(65, 64, 64, 0.1);
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1em;
+    padding: 40px 40px 0 40px;
+    position: relative;
+    top: -40px;
+    z-index: 10000;
+
+}
+.link{
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-start;
+   padding: 15px;
+   align-items: center;
+   gap: 10px;
+   background-color:#eeeeee ;
+   width: 100% !important;
+
+}
+.linkbox>a:hover .link{
+    background-color: #c5c5c5;
+    cursor: pointer;
+
+}
+.link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+
+}
+.linkbox>a{
+    overflow: hidden;
+    border-radius: 24px 24px;
+    text-decoration: none;
+}
+.link>img
+{
+    width: 30px;
+    height: 30px;
+}
+
+.biography
+{
+ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 0px 40px ;
+    text-align: justify;
+    margin-bottom: 50px;
+
+}
+.biography>.separate
+{
+    height: 5px;
+    background-color: #ffc800;
+    width: 100px;
+    margin: 0;
+}
+
+footer
+{
+    padding: 20px 80px;
+    text-align: center;
+}
+
+ @media screen and (min-width:728px ){
+    .bio>h1
+    {
+        font-size: 2.5rem;
+    }
+    .bio>.description
+{
+    width:30%;
+    text-align: center;
+}
+
+
+    
+}
+ 
+
